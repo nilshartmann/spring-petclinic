@@ -2,7 +2,7 @@ dist: trusty
 branches:
   only:
   - travis-build
-language: java
+language: node_js
 jdk: oraclejdk8
 node_js:
   - "6"
