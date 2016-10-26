@@ -2,9 +2,9 @@ dist: trusty
 branches:
   only:
   - travis-build
-language: node_js
+language: java
 jdk: oraclejdk8
 node_js:
   - "6"
-script: ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V && cd client && npm install && npm test
+script: nvm install 6 && ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V && cd client && npm install && npm test
 
