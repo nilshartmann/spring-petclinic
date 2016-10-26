@@ -4,5 +4,7 @@ branches:
   - travis-build
 language: java
 jdk: oraclejdk8
+node_js:
+  - "6"
 script: ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V && cd client && npm install && npm test
 
